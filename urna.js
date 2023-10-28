@@ -2,13 +2,28 @@
 const votos = new Map();
 
 // Inicializa a urna com os candidatos
-votos.set("jackson", 0);
-votos.set("gabriel", 0);
-votos.set("ciro", 0);
+votos.set("Jackson", 0);
+votos.set("Gabriel", 0);
+votos.set("Ciro", 0);
 votos.set("Bolsonaro", 0);
 votos.set("Lula", 0);
 
-// Coleta os votos dos eleitores
+
+//function
+function contibilizarVotacao() {
+
+
+const receberVoto = document.querySelector("select[name='candidato']").valeu;
+  // Adiciona um voto ao candidato
+  votos.set(candidato, votos.get(candidato) + 1);
+  alert("Seu voto foi computado");
+
+}
+
+
+document.querySelector("input[type='submit']").addEventListener("click", contibilizarVotacao);
+
+/** Coleta os votos dos eleitores
 let continuar = true;
 while (continuar) {
   // Solicita o nome do candidato
@@ -33,3 +48,4 @@ console.log("Resultado da votação:");
 for (const candidato of votos.keys()) {
   console.log(`Candidato: ${candidato}, Votos: ${votos.get(candidato)}`);
 }
+*/
