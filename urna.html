@@ -1,39 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <link href="style.css" rel="stylesheet">
   <meta charset="UTF-8">
   <title>Urna eletrônica</title>
+  <script src="logica.js"></script>
 </head>
 <body >
-  <script src="urna.js"></script>
-
-    <form method="post">
-      
-      <center>
-    <img src="fundo.png" />
- 
-    <div id="espacoCandidato">
-      <label for="candidato">Candidato</label>
-      <select name="candidato">
-        <option value="jackson">Jackson</option>
-        <option value="gabriel">Gabriel</option>
-        <option value="ciro">Ciro</option>
-        <option value="Bolsonaro">Bolsonaro</option>
-        <option value="Lula">Lula</option>
-      </select>
-    </div>
-    
-    <div id="espacoAcao">
-      <input type="submit" value="Votar">
-    </div>  
-
-  </center>  
-</form>
-  
-  
-
-
-
+	<center>
+	<img src="fundo.png" />
+	 
+		<div id="espacoCandidato">
+		  <label for="candidato">Candidato</label>
+		  <select name="candidato">
+			<option value="Jackson">Jackson</option>
+			<option value="Gabriel">Gabriel</option>
+			<option value="ciro">Ciro</option>
+			<option value="Bolsonaro">Bolsonaro</option>
+			<option value="Lula">Lula</option>
+		  </select>
+		</div>
+		
+		<div id="espacoAcao">
+		  <input type="button" value="Votar" onclick="contibilizarVotacao()">
+		</div>  
+	</center>  
 </body>
 </html>
