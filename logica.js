@@ -15,6 +15,8 @@ function contibilizarVotacao() {
 	alert("Seu voto foi computado");
 	const receberVoto = document.querySelector('select[name="candidato"]').value;
 	
+	const senhaDigitada = document.querySelector('input[name="senha"]').value;
+alert("sua "+senhaDigitada)
 	if(receberVoto == "Jackson"){
 		votosJackson = votosJackson + 1;
 		alert("Jackson tem " + votosJackson + " votos");
@@ -22,6 +24,6 @@ function contibilizarVotacao() {
 	
 	if(receberVoto == "Gabriel"){
 		votosGabriel += 1;
+		alert("Gabriel  tem " + votosGabriel + " votos");
 	}
 }
-
