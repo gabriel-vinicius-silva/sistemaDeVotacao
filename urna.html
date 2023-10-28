@@ -5,8 +5,10 @@
   <title>Urna eletrônica</title>
   <script src="logica.js"></script>
 </head>
+
 <body BACKGROUND="urnaEletronica.webp">
   <center>
+	<h1>Urna eletrônica</h1>
     <img src="urnaEletronica.webp" />
     <div id="espacoCandidato">
       <label for="candidato">Candidato</label>
@@ -18,7 +20,10 @@
         <option value="Lula">Lula</option>
       </select>
     </div>
-    <div id="espacoAcao">
+  
+	<header>
+  <h1>Urna eletrônica</h1>
+  <div id="espacoAcao">
       <input name="senha" type="password" placeholder="Digite sua senha">
       <input type="button" value="Votar" onclick="contabilizarVotacao()">
     </div>
@@ -26,6 +31,9 @@
       <input type="button" value="Exibir resultado" onclick="contabilizarVotacao()">
       <input name="senhaExibir" type="password" placeholder="Digite sua senha" />
     </div>
+</header>
+  
+	
   </center>
 </body>
 </html>
