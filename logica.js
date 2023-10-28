@@ -10,20 +10,26 @@ var votosCiro = 0;
 var votosBolsonaro = 0;
 var votosLula = 0;
 
+//Constante para a senha
+const senhaCorreta = "gabriel";
+
 //Método que contabiliza o voto escolhido e informa quantos votos o candidato tem.
-function contibilizarVotacao() {
-	alert("Seu voto foi computado");
-	const receberVoto = document.querySelector('select[name="candidato"]').value;
-	
-	const senhaDigitada = document.querySelector('input[name="senha"]').value;
-alert("sua "+senhaDigitada)
-	if(receberVoto == "Jackson"){
-		votosJackson = votosJackson + 1;
-		alert("Jackson tem " + votosJackson + " votos");
-	}
-	
-	if(receberVoto == "Gabriel"){
-		votosGabriel += 1;
-		alert("Gabriel  tem " + votosGabriel + " votos");
-	}
+function contabilizarVotacao(senha) {
+  //Verifica se a senha é correta
+  if (senha === senhaCorreta) {
+    //Verifica qual candidato foi escolhido
+    const receberVoto = document.querySelector('select[name="candidato"]').value;
+
+    //Atualiza o número de votos do candidato escolhido
+    if (receberVoto == "Jackson") {
+      votosJackson++;
+      alert("Jackson tem " + votosJackson + " votos");
+    } else if (receberVoto == "Gabriel") {
+      votosGabriel++;
+      alert("Gabriel tem " + votosGabriel + " votos");
+    }
+  } else {
+    //Avisa que a senha está incorreta
+    alert("Senha incorreta");
+  }
 }

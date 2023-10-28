@@ -5,26 +5,27 @@
   <title>Urna eletrônica</title>
   <script src="logica.js"></script>
 </head>
-<body >
-	<center>
-	<img src="fundo.png" />
-	 
-		<div id="espacoCandidato">
-		  <label for="candidato">Candidato</label>
-		  <select name="candidato">
-			<option value="Jackson">Jackson</option>
-			<option value="Gabriel">Gabriel</option>
-			<option value="ciro">Ciro</option>
-			<option value="Bolsonaro">Bolsonaro</option>
-			<option value="Lula">Lula</option>
-		  </select>
-		</div>
-		
-		<div id="espacoAcao">
-			senha
-			<input name="senha">
-		  <input type="button" value="Votar" onclick="contibilizarVotacao()">
-		</div>  
-	</center>  
+<body>
+  <center>
+    <img src="fundo.png" />
+    <div id="espacoCandidato">
+      <label for="candidato">Candidato</label>
+      <select name="candidato">
+        <option value="Jackson">Jackson</option>
+        <option value="Gabriel">Gabriel</option>
+        <option value="Ciro">Ciro</option>
+        <option value="Bolsonaro">Bolsonaro</option>
+        <option value="Lula">Lula</option>
+      </select>
+    </div>
+    <div id="espacoAcao">
+      <input name="senha" type="password" placeholder="Digite sua senha">
+      <input type="button" value="Votar" onclick="contabilizarVotacao()">
+    </div>
+    <div id="exibirResultado">
+      <input type="button" value="Exibir resultado" onclick="contabilizarVotacao()">
+      <input name="senhaExibir" type="password" placeholder="Digite sua senha" />
+    </div>
+  </center>
 </body>
 </html>
