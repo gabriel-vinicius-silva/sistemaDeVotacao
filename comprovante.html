@@ -7,16 +7,21 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            background-color: #f2f2f2;
         }
         h1 {
+            font-size: 40px;
             color: #007BFF;
+            margin-bottom: 20px;
         }
         button {
             background-color: #007BFF;
             color: #fff;
             border: none;
-            padding: 10px 20px;
+            padding: 20px 35px;
+            font-size: 20px;
             cursor: pointer;
+            border-radius: 5px;
         }
         button:hover {
             background-color: #0056b3;
@@ -24,6 +29,12 @@
         #comprovante {
             font-size: 18px;
             margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px 0 #ccc;
         }
     </style>
 </head>
@@ -31,7 +42,38 @@
     <h1>Comprovante de Votação</h1>
     <button onclick="gerarComprovante()">Gerar Comprovante</button>
 
-    <div id="comprovante"></div>
+    <div id="comprovante">
+        <h2>Dados do Eleitor</h2>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <td>Fulano de Tal</td>
+            </tr>
+            <tr>
+                <th>Número do Título</th>
+                <td>123456789012</td>
+            </tr>
+            <tr>
+                <th>Data de Nascimento</th>
+                <td>01/01/1990</td>
+            </tr>
+        </table>
+        <h2>Dados da Votação</h>
+        <table>
+            <tr>
+                <th>Eleição</th>
+                <td>Eleições 2023</td>
+            </tr>
+            <tr>
+                <th>Data da Votação</th>
+                <td>02/10/2023</td>
+            </tr>
+            <tr>
+                <th>Horário da Votação</th>
+                <td>15:00</td>
+            </tr>
+        </table>
+    </div>
 
     <script src="sketch.js"></script>
 </body>
