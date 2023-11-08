@@ -3,13 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Comprovante de Votação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #comprovante {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Comprovante de Votação</h1>
-    <button onclick="comprovante()">Gerar Comprovante</button>
+    <button onclick="gerarComprovante()">Gerar Comprovante</button>
 
     <div id="comprovante"></div>
 
-    <script src="sketch.js"></Script>
+    <script src="sketch.js"></script>
 </body>
 </html>
