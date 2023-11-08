@@ -21,4 +21,8 @@ function comprovante() {
         var comprovanteText = "Comprovante de votação de " + nome + "\n\n" + "Idade: " + idade + " anos";
         document.getElementById("comprovante").innerText = comprovanteText;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e57d5f75deb6c2eb39714ad451e1249346eef3c1
